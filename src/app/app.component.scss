@@ -1,0 +1,31 @@
+@import '~@angular/material/theming';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'src/custom-theme.scss';
+@import 'src/light-custom-theme.scss';
+
+.right-position  {
+    direction: rtl;
+}
+
+@include mat-core();
+.custom-theme {
+    @include angular-material-theme($custom-theme);
+  }
+  .light-custom-theme {
+    @include angular-material-theme($light-custom-theme);
+  }
+
+
+  /**
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+
+
+// Refrences for theming:
+// https://stackblitz.com/edit/multiple-themes-material-so?file=app%2Fapp.component.html
+// https://medium.com/@tomastrajan/the-complete-guide-to-angular-material-themes-4d165a9d24d1
+
+//i18n translate https://blog.angulartraining.com/how-to-internationalize-i18n-your-angular-application-tutorial-dee2c6984bc1
